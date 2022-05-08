@@ -1,0 +1,645 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19043.1645; Version 2009; 64bit' Language: 'ko' Physical Memory: 16322 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Games\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/khkim/Desktop/GitHub/OpenSourceProject/OpenSourceProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+3257
+Successfully changed project path to: C:/Users/khkim/Desktop/GitHub/OpenSourceProject/OpenSourceProject
+C:/Users/khkim/Desktop/GitHub/OpenSourceProject/OpenSourceProject
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 54.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path D:/Games/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/khkim/Desktop/GitHub/OpenSourceProject/OpenSourceProject/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2486)
+    Vendor:   
+    VRAM:     8050 MB
+    Driver:   27.21.14.6089
+Initialize mono
+Mono path[0] = 'D:/Games/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Games/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Games/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Games/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001417 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010831 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.2 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2547.
+Total: 2.137800 ms (FindLiveObjects: 0.184200 ms CreateObjectMapping: 0.070500 ms MarkObjects: 1.772100 ms  DeleteObjects: 0.110100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/StageSelect.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/StageSelect.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11ea3dd6311ca26d0274451fd524ce9') in 0.015579 seconds 
+  Import took 0.018570 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009697 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.9 MB.
+System memory in use after: 96.9 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2551.
+Total: 2.239600 ms (FindLiveObjects: 0.173000 ms CreateObjectMapping: 0.071300 ms MarkObjects: 1.904600 ms  DeleteObjects: 0.089700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 17.010928 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background
+  artifactKey: Guid(d1812e76ef309974dab10fcb8a0593ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background using Guid(d1812e76ef309974dab10fcb8a0593ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be823cc23b893393bfd8020a685d94f') in 0.006375 seconds 
+  Import took 0.009304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background
+  artifactKey: Guid(d1812e76ef309974dab10fcb8a0593ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background using Guid(d1812e76ef309974dab10fcb8a0593ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be823cc23b893393bfd8020a685d94f') in 0.003702 seconds 
+  Import took 0.006759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.155789 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background/png
+  artifactKey: Guid(b1af854388f12ea46b814763cf1775fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background/png using Guid(b1af854388f12ea46b814763cf1775fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143610d8f77408e7627edae6963041f0') in 0.003678 seconds 
+  Import took 0.006937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.657316 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background/png/Clouds
+  artifactKey: Guid(2504f94a603e1a645ad70c06849ad86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background/png/Clouds using Guid(2504f94a603e1a645ad70c06849ad86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9726e1a193ddeb1b38a56e1c912802bd') in 0.004186 seconds 
+  Import took 0.007022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.165347 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background/png/Clouds/128x128
+  artifactKey: Guid(26b8163dce433cc41920a8e128b396b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Backgrounds/Background/png/Clouds/128x128 using Guid(26b8163dce433cc41920a8e128b396b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08eae7d00ae2d849a7b8e2de5fac436') in 0.004545 seconds 
+  Import took 0.007419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.819089 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Iconic2048x2048.png
+  artifactKey: Guid(2676ff5c94fc9f1489d59bf570d079e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Iconic2048x2048.png using Guid(2676ff5c94fc9f1489d59bf570d079e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62de0b6ddaed3ff523607cbca7737fd') in 0.501933 seconds 
+  Import took 0.505573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004561 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Iconic2048x2048.png
+  artifactKey: Guid(2676ff5c94fc9f1489d59bf570d079e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Iconic2048x2048.png using Guid(2676ff5c94fc9f1489d59bf570d079e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62de0b6ddaed3ff523607cbca7737fd') in 0.265547 seconds 
+  Import took 0.269000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.560187 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Iconic1024x1024.png
+  artifactKey: Guid(9fb826f3ca5c937439ca036782864fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Iconic1024x1024.png using Guid(9fb826f3ca5c937439ca036782864fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd660358920d192330d34faaf94a0cb38') in 0.258293 seconds 
+  Import took 0.261941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.578787 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Empty1024x1024.png
+  artifactKey: Guid(54b664ca75dbece4ea3a07f76313b928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Empty1024x1024.png using Guid(54b664ca75dbece4ea3a07f76313b928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372e7fdc3a9ea9e0b9becc5ca91e951a') in 0.044035 seconds 
+  Import took 0.047100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.939515 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Empty512x512.png
+  artifactKey: Guid(5ef3ca7e743290d448e5e48c3d4ebc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Empty512x512.png using Guid(5ef3ca7e743290d448e5e48c3d4ebc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c26a19c8c2cd3930c4eafcdf9ab395b') in 0.031151 seconds 
+  Import took 0.034213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.509677 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements1024x512.png
+  artifactKey: Guid(f87b1d42a16dc3e4691317c697a89892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements1024x512.png using Guid(f87b1d42a16dc3e4691317c697a89892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f033f20a16e4d85f123f2bad5167abad') in 0.027151 seconds 
+  Import took 0.030173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001765 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements1024x512.png
+  artifactKey: Guid(f87b1d42a16dc3e4691317c697a89892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements1024x512.png using Guid(f87b1d42a16dc3e4691317c697a89892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f033f20a16e4d85f123f2bad5167abad') in 0.026262 seconds 
+  Import took 0.029183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044166 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements512x256.png
+  artifactKey: Guid(0a1addae9aac34447b1e890a7ae76292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements512x256.png using Guid(0a1addae9aac34447b1e890a7ae76292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625a1283b408e004c85ad53267850525') in 0.026832 seconds 
+  Import took 0.029899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.014596 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(cf68036e0f3207e428635f1d390567ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(cf68036e0f3207e428635f1d390567ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a24b4a21cd6dcdac2093d0bc5a040d7') in 0.003318 seconds 
+  Import took 0.006749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.377271 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Animated Text.prefab
+  artifactKey: Guid(8e6ec20e79c62481baf292059c269bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Animated Text.prefab using Guid(8e6ec20e79c62481baf292059c269bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26c5ca29bbf5650ceaa2961f8d2c38e') in 0.046099 seconds 
+  Import took 0.049173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Option List.prefab
+  artifactKey: Guid(849610b926fb64ccf9dbdfaa112dea32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Option List.prefab using Guid(849610b926fb64ccf9dbdfaa112dea32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d5508a5530c4afb0481a99c1f57780') in 0.022676 seconds 
+  Import took 0.025518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Bar.prefab
+  artifactKey: Guid(ec019941f90ec41e5ad2df28607525e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Bar.prefab using Guid(ec019941f90ec41e5ad2df28607525e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4958829d73dce728298b660104e7155c') in 0.007268 seconds 
+  Import took 0.010037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Login Window.prefab
+  artifactKey: Guid(10d329ec520b5441cab19f9d8742996b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Login Window.prefab using Guid(10d329ec520b5441cab19f9d8742996b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199e6a661fe3688e36cd58ba0c218b69') in 0.038370 seconds 
+  Import took 0.041410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Pause Window.prefab
+  artifactKey: Guid(89327a6e9c72e4e65b669faa90bd3b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Pause Window.prefab using Guid(89327a6e9c72e4e65b669faa90bd3b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719ae594973ef6e866422e3fecd7cd0c') in 0.013471 seconds 
+  Import took 0.016426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Scroll View.prefab
+  artifactKey: Guid(14edf48f871294664b92fe1d685d401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Scroll View.prefab using Guid(14edf48f871294664b92fe1d685d401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd595d6cf0d025933880f41d225e3f11f') in 0.013156 seconds 
+  Import took 0.016116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
+  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdee885e51b9ccf0fcef3a7dbe274ecc') in 0.012366 seconds 
+  Import took 0.015461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Radial Bar.prefab
+  artifactKey: Guid(dd369b5fa8cbe4671971e8b1d6c74c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Radial Bar.prefab using Guid(dd369b5fa8cbe4671971e8b1d6c74c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3579a3332ec79fe4401a465d1dfe825f') in 0.009796 seconds 
+  Import took 0.012760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Toggle.prefab
+  artifactKey: Guid(19deb05d9974e4ce8a4516ed7506874b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Toggle.prefab using Guid(19deb05d9974e4ce8a4516ed7506874b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0cb30316a767f353992fc72a60c7cb') in 0.011599 seconds 
+  Import took 0.014628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cce7a24742fd5e8a8ab2da20c69032f') in 0.007570 seconds 
+  Import took 0.010502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Menu.prefab
+  artifactKey: Guid(5d556420a6baa4cadb7cac29e63fb404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Menu.prefab using Guid(5d556420a6baa4cadb7cac29e63fb404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4cfc5e504d79d4a61a76448fe353fc') in 0.008200 seconds 
+  Import took 0.011121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Button.prefab
+  artifactKey: Guid(ce875ceeaf5474c83a7ae0fce3b869b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Button.prefab using Guid(ce875ceeaf5474c83a7ae0fce3b869b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab454258540568c83cbc60fb33c8be7') in 0.006558 seconds 
+  Import took 0.009449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Menus/Pause Menu.prefab
+  artifactKey: Guid(3032ad3f9ada44e60adb2c670beadfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Menus/Pause Menu.prefab using Guid(3032ad3f9ada44e60adb2c670beadfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94cbfc8ff361b20d4f03fcf2e8c49169') in 0.067508 seconds 
+  Import took 0.071099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/LoadingImage.prefab
+  artifactKey: Guid(04f002c6bd8122c41afb6f89f7655eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/LoadingImage.prefab using Guid(04f002c6bd8122c41afb6f89f7655eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f36b7d1945402004c4ccb7d698be31') in 0.005949 seconds 
+  Import took 0.009553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Scene Transition.prefab
+  artifactKey: Guid(852a72783af074a9e958f397827aa3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Scene Transition.prefab using Guid(852a72783af074a9e958f397827aa3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bcc4ab52b732fc570d6a7c2663b88f') in 0.014857 seconds 
+  Import took 0.018028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Button.prefab
+  artifactKey: Guid(8de8f6c5f34274e569ac1bd4d57c3c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Button.prefab using Guid(8de8f6c5f34274e569ac1bd4d57c3c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a0767f2f96be674b4d81dfa8cddef4') in 0.011264 seconds 
+  Import took 0.014334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Confirm Window.prefab
+  artifactKey: Guid(8a9cb57d0f938478590160ae92e4c337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Confirm Window.prefab using Guid(8a9cb57d0f938478590160ae92e4c337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf9af79f6d1481781fdee39ebea862d') in 0.013422 seconds 
+  Import took 0.016370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Dropdown.prefab
+  artifactKey: Guid(542b3538f7c95493b8f589fdc88a1db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Dropdown.prefab using Guid(542b3538f7c95493b8f589fdc88a1db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f602f608942adc822909a5d759cf6548') in 0.014641 seconds 
+  Import took 0.017635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Menus/Main Menu.prefab
+  artifactKey: Guid(0fd0845f1842d44e583bfe03cd1864aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Menus/Main Menu.prefab using Guid(0fd0845f1842d44e583bfe03cd1864aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57c8dc158ebbede4c58948b8b98d4c7') in 0.035604 seconds 
+  Import took 0.038958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Settings Tab Group.prefab
+  artifactKey: Guid(d3bee2b5e70b74f94a0b33605a4efc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Settings Tab Group.prefab using Guid(d3bee2b5e70b74f94a0b33605a4efc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e637c5efbf70954a2fd729194900550') in 0.033557 seconds 
+  Import took 0.036850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Background.prefab
+  artifactKey: Guid(b2f8f03f176bd4e54a78d89af62e6daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Background.prefab using Guid(b2f8f03f176bd4e54a78d89af62e6daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e00427f11c7dcf66fa3b8055191e7a9') in 0.005248 seconds 
+  Import took 0.007951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Button With Background.prefab
+  artifactKey: Guid(47a7d99d823864bbd90ebe911d1dd081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Button With Background.prefab using Guid(47a7d99d823864bbd90ebe911d1dd081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349c452b2c990fdd716493a0607df5eb') in 0.006312 seconds 
+  Import took 0.009114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Input Field.prefab
+  artifactKey: Guid(b70a0d4e683c84847974b6ddea172fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Input Field.prefab using Guid(b70a0d4e683c84847974b6ddea172fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de6b8191e7ed11f0e022dfbf15134c8') in 0.011033 seconds 
+  Import took 0.014079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Loading Window.prefab
+  artifactKey: Guid(5ec3bcee11f3045e39155d310acbe935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Windows/Loading Window.prefab using Guid(5ec3bcee11f3045e39155d310acbe935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62291255a4d9772602e77487c740d37b') in 0.014707 seconds 
+  Import took 0.017811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Loading UI.prefab
+  artifactKey: Guid(f833ace1a5ea04d86b57461ae4327732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Loading UI.prefab using Guid(f833ace1a5ea04d86b57461ae4327732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a537fbf557ad036c76bb35b8e41df446') in 0.012144 seconds 
+  Import took 0.015147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Toggle With Background.prefab
+  artifactKey: Guid(32a1b081f803741708be7a0a3af17658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Icon Toggle With Background.prefab using Guid(32a1b081f803741708be7a0a3af17658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8803d3f59f9e2f9710b640f84c8b00') in 0.006925 seconds 
+  Import took 0.009727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001872 seconds.
+  path: Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Loading UI.prefab
+  artifactKey: Guid(f833ace1a5ea04d86b57461ae4327732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Quantum Tek/Quantum UI/Prefabs/Elements/Loading UI.prefab using Guid(f833ace1a5ea04d86b57461ae4327732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a537fbf557ad036c76bb35b8e41df446') in 0.011961 seconds 
+  Import took 0.014976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.979331 seconds.
+  path: Assets/Scenes/Title.unity
+  artifactKey: Guid(1734df0063d105d4383a415b1aceec8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Title.unity using Guid(1734df0063d105d4383a415b1aceec8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10c32abe224b32e2dfb5ebd7a228bbe') in 0.003736 seconds 
+  Import took 0.006700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.663446 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Water Animation
+  artifactKey: Guid(6fab39c948942a5478a7a3e19ce57600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Water Animation using Guid(6fab39c948942a5478a7a3e19ce57600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a75370f38344d80617f30d0c6d039c') in 0.003690 seconds 
+  Import took 0.006773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.450930 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )
+  artifactKey: Guid(0106bf86e8bc1674cae765c7dd981dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 ) using Guid(0106bf86e8bc1674cae765c7dd981dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd41a646bafa69735cb4d39b932d261f9') in 0.003921 seconds 
+  Import took 0.006881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.503613 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/4x
+  artifactKey: Guid(9c454dd79b4c8204d997c1798999263d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/4x using Guid(9c454dd79b4c8204d997c1798999263d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a931c8856b592b7f7823ae8794dd23') in 0.004046 seconds 
+  Import took 0.007229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.112004 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Tiles
+  artifactKey: Guid(9967777a9fc49854c981eb9ebd1bb605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Tiles using Guid(9967777a9fc49854c981eb9ebd1bb605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51591b59ed37383e656f842f7eacd4b') in 0.004360 seconds 
+  Import took 0.007246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.274387 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Preview
+  artifactKey: Guid(ce425bb503bd13d4c9b901f084f75e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Preview using Guid(ce425bb503bd13d4c9b901f084f75e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a9c3119ef0fa8c070fb3b2ce3d7303') in 0.003744 seconds 
+  Import took 0.007166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.959371 seconds.
+  path: Assets/Packages/BayatGames/Free Platform Game Assets/Demo/Demo.unity
+  artifactKey: Guid(c141d24673958bb44b780d361745cca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/BayatGames/Free Platform Game Assets/Demo/Demo.unity using Guid(c141d24673958bb44b780d361745cca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214b6463ee04c8253b1db2ffc8bcb0a3') in 0.004401 seconds 
+  Import took 0.007367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.022779 seconds.
+  path: Assets/Scenes/StageSelect.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/StageSelect.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655e861fb33c2b41f2066c6cc1ed23fb') in 0.004104 seconds 
+  Import took 0.007103 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010084 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.976 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2583.
+Total: 2.253100 ms (FindLiveObjects: 0.186600 ms CreateObjectMapping: 0.066200 ms MarkObjects: 1.811200 ms  DeleteObjects: 0.188300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1341.442998 seconds.
+  path: Assets/Script/Test.cs
+  artifactKey: Guid(310ed3dc586f66c48a664bdebf433b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Test.cs using Guid(310ed3dc586f66c48a664bdebf433b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a977d3364149a4001fb1c2d66ed0551') in 0.018163 seconds 
+  Import took 0.021777 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010184 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2095 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2588.
+Total: 2.143900 ms (FindLiveObjects: 0.235100 ms CreateObjectMapping: 0.085200 ms MarkObjects: 1.724200 ms  DeleteObjects: 0.098300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010752 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.989 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2095 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2592.
+Total: 2.172500 ms (FindLiveObjects: 0.198500 ms CreateObjectMapping: 0.087600 ms MarkObjects: 1.785800 ms  DeleteObjects: 0.099500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 52.420799 seconds.
+  path: Assets/Script/Test.cs
+  artifactKey: Guid(310ed3dc586f66c48a664bdebf433b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Test.cs using Guid(310ed3dc586f66c48a664bdebf433b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bf753a88acf7ea31dc7edf68499df9') in 0.006079 seconds 
+  Import took 0.009118 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010752 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.974 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2095 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.3 MB.
+System memory in use after: 100.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2596.
+Total: 2.088800 ms (FindLiveObjects: 0.184300 ms CreateObjectMapping: 0.077800 ms MarkObjects: 1.729200 ms  DeleteObjects: 0.096800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
