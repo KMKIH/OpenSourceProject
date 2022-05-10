@@ -12,4 +12,5 @@ public class Stage : MonoBehaviour
 {
     public StageCondition stageCondition;
     public int numOfStart = 0;
+
 }
