@@ -42,7 +42,7 @@ public class LoadingSceneController : MonoBehaviour
         gameObject.SetActive(true);
         StartCoroutine(LoadSceneProcess(sceneName));
     }
-    public void FadeOut()
+    private void FadeOut()
     {
         gameObject.SetActive(true);
         canvasGroup.alpha = 1;

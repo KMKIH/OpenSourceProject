@@ -13,4 +13,8 @@ public class SceneLoader
             SceneManager.LoadScene(sceneName);
         }
     }
+    public static string GetSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
+    }
 }

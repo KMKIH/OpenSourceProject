@@ -16,4 +16,8 @@ public class TitleSceneController : MonoBehaviour
     {
         LoadingSceneController.Instance.LoadSceneWithFade("StageSelect");
     }
+    public void LoadEditScene()
+    {
+        LoadingSceneController.Instance.LoadSceneWithFade("Edit");
+    }
 }
