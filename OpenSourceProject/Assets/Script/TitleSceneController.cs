@@ -16,9 +16,8 @@ public class TitleSceneController : MonoBehaviour
     {
         LoadingSceneController.Instance.LoadSceneWithFade("StageSelect");
     }
-    [SerializeField] GameObject editWindow;
     public void OpenEditWindow()
     {
-        editWindow.SetActive(true);
+        LoadingSceneController.Instance.LoadSceneWithFade("Edit");
     }
 }
