@@ -18,6 +18,6 @@ public class TitleSceneController : MonoBehaviour
     }
     public void OpenEditWindow()
     {
-        LoadingSceneController.Instance.LoadSceneWithFade("Edit");
+        LoadingSceneController.Instance.LoadSceneWithFade("Editor");
     }
 }
