@@ -22,8 +22,8 @@ public class Tilemap2D : MonoBehaviour
     private GameObject itemPrefab;
 
 
-    private int maxCoinCount = 0;//
-    private int currentCoinCount = 0;//
+    public int maxCoinCount = 0;//
+    public int currentCoinCount = 0;//
 
     public void GenerateTilemap(MapData mapData)
     {

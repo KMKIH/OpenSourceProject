@@ -474,8 +474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9127a172104ce9342973e7e9db5bb91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageCondition: 0
-  numOfStart: 0
+  stageCondition: 1
+  numOfStar: 0
 --- !u!114 &134590638272476980
 MonoBehaviour:
   m_ObjectHideFlags: 0

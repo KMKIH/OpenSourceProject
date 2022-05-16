@@ -3,33 +3,27 @@ using UnityEngine;
 
 public class Destination : Tile
 {
-    public static int maxStageCount;//최대 스테이지 개수
-
-
+    private int maxStageCount;//최대 스테이지 개수
+    private int stageIdx;
+    
     private Tilemap2D tilemap2D;
     private void Awake()
     {
+        maxStageCount = StageDataController.TotalStageNum;
+        stageIdx = StageDataController.StageIdx;
         tilemap2D = FindObjectOfType<Tilemap2D>();
-        Debug.Log(tilemap2D.name);
     }
     public override void Collision(CollisionDirection direction)//접촉하면 
     {
-
-        int index = PlayerPrefs.GetInt("StageIndex");
-        if (index < maxStageCount - 1)//다음 스테이지가 남았을 때 
+        if (stageIdx < maxStageCount - 1)//다음 스테이지가 남았을 때 
         {
-            index++;
-            PlayerPrefs.SetInt("StageIndex", index);
-
-            SceneLoader.LoadScene();
-
+            ClearWindowController.Instance.Clear(tilemap2D.maxCoinCount - tilemap2D.currentCoinCount,tilemap2D.maxCoinCount);
         }
         else
         {
-            SceneLoader.LoadScene("Intro");//intro이지만 추후에 Ending으로 교체 가능
+            ClearWindow_lastController.Instance.Clear(tilemap2D.maxCoinCount - tilemap2D.currentCoinCount, tilemap2D.maxCoinCount);
         }
-
-
-
+        // collider off
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 }

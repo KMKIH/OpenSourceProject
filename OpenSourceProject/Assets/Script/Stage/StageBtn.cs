@@ -17,7 +17,7 @@ public class StageBtn : MonoBehaviour
     }
     private void LoadStage()
     {
-        FindObjectOfType<StageData>().selectStageName = this.name;
+        FindObjectOfType<StageDataController>().selectStageName = this.name;
         LoadingSceneController.Instance.LoadSceneWithFade("Stage");
     }
 }
