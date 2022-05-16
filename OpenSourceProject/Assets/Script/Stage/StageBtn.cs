@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StageBtn : MonoBehaviour
 {
     private Button btn;
-    private Stage stage;
+    private StageInfo stage;
     private void Awake()
     {
         btn = GetComponentInChildren<Button>();
-        stage = GetComponent<Stage>();
+        stage = GetComponent<StageInfo>();
     }
     private void Start()
     {
@@ -19,6 +17,7 @@ public class StageBtn : MonoBehaviour
     }
     private void LoadStage()
     {
-        LoadingSceneController.Instance.LoadSceneWithFade(this.name);
+        FindObjectOfType<StageData>().selectStageName = this.name;
+        LoadingSceneController.Instance.LoadSceneWithFade("Stage");
     }
 }

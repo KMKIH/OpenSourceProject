@@ -20,10 +20,10 @@ public class Scroll : MonoBehaviour
         curPosx = content.anchoredPosition.x;
 
         
-        if (curPosx <= -(((int)(StageController.TotalStageNum/4)+1)*1300)) return;
+        if (curPosx <= -(((int)(StageData.TotalStageNum/4)+1)*1300)) return;
         // Set goal
         goalPosx = ((int)(curPosx / 1300) - 1) * 1300;
-        if (goalPosx <= -(((int)(StageController.TotalStageNum / 4) + 1) * 1300)) goalPosx = -(((int)(StageController.TotalStageNum / 4) + 1) * 1300);
+        if (goalPosx <= -(((int)(StageData.TotalStageNum / 4) + 1) * 1300)) goalPosx = -(((int)(StageData.TotalStageNum / 4) + 1) * 1300);
         StartCoroutine(ScrollContent(true));
     }
     public void Left()

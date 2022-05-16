@@ -7,10 +7,10 @@ using System.IO;
 
 public class EditWindowController : MonoBehaviour
 {
-    MapDataLoader mapDataLoader;
+    MapDataLoader_Edit mapDataLoader;
     private void Awake()
     {
-        mapDataLoader = new MapDataLoader();
+        mapDataLoader = new MapDataLoader_Edit();
     }
     public void LoadMapData(MapData mapData)
     {

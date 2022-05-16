@@ -1,0 +1,15 @@
+{
+  "mapSize": {
+    "x": 0,
+    "y": 0,
+    "magnitude": 0.0,
+    "sqrMagnitude": 0
+  },
+  "mapData": null,
+  "playerPositionl": {
+    "x": 0,
+    "y": 0,
+    "magnitude": 0.0,
+    "sqrMagnitude": 0
+  }
+}

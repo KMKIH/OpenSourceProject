@@ -2701,7 +2701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1343672029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 789ed4aa502967848a6eae3e4ee5f312, type: 3}
+  m_Script: {fileID: 11500000, guid: 7636f286aefd0964ba7d927a12ee0dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stageSelectionPrefab: {fileID: 2145520070131604511, guid: 8e0136e4248931c43891f12b26a658a5, type: 3}
@@ -2709,6 +2709,7 @@ MonoBehaviour:
   - {fileID: -4182638117745872875, guid: f87b1d42a16dc3e4691317c697a89892, type: 3}
   - {fileID: -3046689145717892180, guid: f87b1d42a16dc3e4691317c697a89892, type: 3}
   - {fileID: -5235723410178732771, guid: f87b1d42a16dc3e4691317c697a89892, type: 3}
+  selectStageName: 
 --- !u!1 &1394034074
 GameObject:
   m_ObjectHideFlags: 0
