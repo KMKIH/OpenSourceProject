@@ -8,7 +8,6 @@ public class StageUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textCoinCount;
 
-
     public void UpdateTextStage(string stageName)
     {
         textStage.text = stageName;
@@ -17,7 +16,6 @@ public class StageUI : MonoBehaviour
     public void UpdateCoinCount(int current, int max)
     {
         textCoinCount.text = $"Coin{current}/{max}";
-
     }
 
 }

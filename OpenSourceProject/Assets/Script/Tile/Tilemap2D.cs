@@ -57,6 +57,7 @@ public class Tilemap2D : MonoBehaviour
             }
         }
         currentCoinCount = maxCoinCount;
+        stageUI.UpdateCoinCount(currentCoinCount, maxCoinCount);
     }
 
     public void SpawnTile(TileType tileType, Vector3 position)
