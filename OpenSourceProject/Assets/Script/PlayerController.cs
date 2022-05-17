@@ -45,6 +45,14 @@ public class PlayerController : MonoBehaviour
         {
             CollisionToTile(CollisionDirection.Down);
         }
+        else if (movement2D.IsCollision.left)
+        {
+            CollisionToTile(CollisionDirection.Left);
+        }
+        else if(movement2D.IsCollision.right)
+        {
+            CollisionToTile(CollisionDirection.Right);
+        }
     }
 
     private void CollisionToTile(CollisionDirection direction)
@@ -52,7 +60,17 @@ public class PlayerController : MonoBehaviour
         Tile tile = movement2D.HitTransform.GetComponent<Tile>();
         if(tile != null)
         {
-            tile.Collision(direction);
+            if(direction == CollisionDirection.Down || direction == CollisionDirection.Up)
+            {
+                tile.Collision(direction);
+            }
+            else if(direction == CollisionDirection.Left || direction == CollisionDirection.Right)  
+            {
+                if (tile.GetComponent<Destination>() || tile.GetComponent<TileBoom>())
+                {
+                    tile.Collision(direction);
+                }
+            }
         }
     }
 
@@ -66,6 +84,4 @@ public class PlayerController : MonoBehaviour
             tilemap2D.GetCoin(collision.gameObject);
         }
     }
-
-
 }

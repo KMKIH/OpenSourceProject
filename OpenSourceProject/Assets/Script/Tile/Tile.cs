@@ -5,7 +5,7 @@ public enum TileType
     Empty = 0, Base, Broke, Boom, Jump, StraightLeft, StraightRight, Destination, LastIndex
 }
 
-public enum CollisionDirection { Up = 0, Down }
+public enum CollisionDirection { Up = 0, Down, Left, Right }
 
 public abstract class Tile : MonoBehaviour//후에 abstract로 변경
 {

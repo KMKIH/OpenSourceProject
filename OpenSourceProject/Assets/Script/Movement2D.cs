@@ -54,12 +54,16 @@ public class Movement2D : MonoBehaviour
         if(collisionChecker.up || collisionChecker.down)
         {
             velocity.y = 0;
-
         }
-
-        //JumpTo();
+        else if (collisionChecker.left || collisionChecker.right)
+        {
+            MoveType = MoveType.UpDown;
+        }
     }
-
+    public void SetMoveType(MoveType moveType)
+    {
+        MoveType = moveType;
+    }
 
     public void UpdateMovement()
     {
@@ -144,7 +148,7 @@ public class Movement2D : MonoBehaviour
                 collisionChecker.left = direction == -1;
                 collisionChecker.right = direction == 1;
 
-
+                HitTransform = hit.transform;
             }
             Debug.DrawLine(rayPosition, rayPosition + Vector2.right * direction * distance, Color.yellow);
         }

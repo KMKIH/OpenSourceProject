@@ -84,8 +84,6 @@ public class StageDataController : MonoBehaviour
                 stageArr[i].stageCondition = StageCondition.Inactive;
             }
             stageArr[i].numOfStar = 0;
-            Debug.Log(stageArr[i].numOfStar);
-            Debug.Log(stageArr[i].stageCondition);
         }
     }
     [ContextMenu("To Json Data")]
