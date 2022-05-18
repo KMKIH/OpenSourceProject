@@ -4,10 +4,10 @@ public class EditSceneController : MonoBehaviour
 {
     public void sceneReset()
     {
-        SceneLoader.LoadScene();
+        LoadingSceneController.Instance.LoadSceneWithFade(SceneLoader.GetSceneName());
     }
     public void goTitle()
     {
-        SceneLoader.LoadScene("Title");
+        LoadingSceneController.Instance.LoadSceneWithFade("Title");
     }
 }

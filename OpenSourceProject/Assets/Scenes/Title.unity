@@ -1405,8 +1405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770bba52b87b608429d0ac5e0e305959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClear: 
-  numOfStar: 
   selectStageName: 
 --- !u!1 &2144340630
 GameObject:

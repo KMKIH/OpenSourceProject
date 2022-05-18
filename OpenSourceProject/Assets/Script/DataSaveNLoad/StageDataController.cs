@@ -5,10 +5,8 @@ public class StageDataController : MonoBehaviour
 {
     public static int TotalStageNum { private set; get; } = 7;
     public static StageInfo[] stageArr = new StageInfo[TotalStageNum];
-
     // 선택한 스테이지 이름
     public string selectStageName = null;
-
     // 현재 스테이지 Index
     private static int stageIdx = 0;
     public static int StageIdx
@@ -19,14 +17,26 @@ public class StageDataController : MonoBehaviour
         }
         get => stageIdx;
     }
+    // Stage Data
+    StageData stageData = new StageData();
 
-    StageData stageData;
     private void Awake()
     {
-        stageData = new StageData();
+        LoadStageData();
+    }
+
+    #region [Save&Load Stage Data]
+    public void SaveStageData()
+    {
+        Save();
+        SaveStageDataToJson();
+        Debug.Log("저장 성공");
+    }
+    public void LoadStageData()
+    {
         try
         {
-            LoadStageDataToJson();
+            LoadStageDataFromJson();
             Load();
             Debug.Log("로드 성공");
         }
@@ -46,19 +56,10 @@ public class StageDataController : MonoBehaviour
             }
         }
     }
-    #region [Save&Load Stage Data]
-    public void SaveStageData()
-    {
-        Save();
-        SaveStageDataToJson();
-        Debug.Log("저장 성공");
-    }
-
     void Save()
     {
         for (int i = 0; i < TotalStageNum; i++)
         {
-            stageData.isClear[i] = !(stageArr[i].numOfStar == 0);
             stageData.numOfStar[i] = stageArr[i].numOfStar;
         }
     }
@@ -66,7 +67,14 @@ public class StageDataController : MonoBehaviour
     {
         for (int i = 0; i < TotalStageNum; i++)
         {
-            stageArr[i].stageCondition = stageData.isClear[i] ? StageCondition.Active : StageCondition.Inactive;
+            stageArr[i] = new StageInfo();
+            if (i == 0) stageArr[i].stageCondition = StageCondition.Active;
+            else
+            {
+                stageArr[i].stageCondition 
+                    = stageData.numOfStar[i-1] > 0 ? 
+                    StageCondition.Active : StageCondition.Inactive;
+            }
             stageArr[i].numOfStar = stageData.numOfStar[i];
         }
     }
@@ -90,15 +98,16 @@ public class StageDataController : MonoBehaviour
     void SaveStageDataToJson()
     {
         string jsonData = JsonUtility.ToJson(stageData, true);
-        string path = Application.dataPath + "/StageData_1.json";
+        string path = Application.dataPath + "/StageData.json";
 
         File.WriteAllText(path, jsonData);
     }
     [ContextMenu("From Json Data")]
-    void LoadStageDataToJson()
+    void LoadStageDataFromJson()
     {
-        string path = Application.dataPath + "/StageData_1.json";
+        string path = Application.dataPath + "/StageData.json";
         string jsonData = File.ReadAllText(path);
+
         stageData = JsonUtility.FromJson<StageData>(jsonData);
     }
     #endregion

@@ -64,19 +64,19 @@ public class ClearWindowController : MonoBehaviour
     public void GoStageSelect()
     {
         Time.timeScale = 1f;
-        SaveData();
+        GameController.SaveData(numOfStar);
         LoadingSceneController.Instance.LoadSceneWithFade("StageSelect");
     }
     public void Restart()
     {
         Time.timeScale = 1f;
-        SaveData();
+        GameController.SaveData(numOfStar);
         LoadingSceneController.Instance.LoadSceneWithFade(SceneLoader.GetSceneName());
     }
     public void NextStage()
     {
         Time.timeScale = 1f;
-        SaveData();
+        GameController.SaveData(numOfStar);
 
         StageDataController.StageIdx += 1;
         int stageIdx = StageDataController.StageIdx;
@@ -84,15 +84,4 @@ public class ClearWindowController : MonoBehaviour
         LoadingSceneController.Instance.LoadSceneWithFade(SceneLoader.GetSceneName());
     }
     #endregion
-    private void SaveData()
-    {
-
-        int stageIdx = StageDataController.StageIdx;
-        StageDataController.stageArr[stageIdx].numOfStar = numOfStar;
-        if (stageIdx < StageDataController.TotalStageNum - 1)
-        {
-            StageDataController.stageArr[stageIdx + 1].stageCondition = StageCondition.Active;
-        }
-        FindObjectOfType<StageDataController>().SaveStageData();
-    }
 }

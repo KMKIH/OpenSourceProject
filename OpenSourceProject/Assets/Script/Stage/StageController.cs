@@ -1,4 +1,5 @@
 using UnityEngine;
+using QuantumTek;
 
 public class StageController : MonoBehaviour
 {
@@ -7,16 +8,12 @@ public class StageController : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     [SerializeField] private CameraController_Player cameraController;
     [SerializeField] private StageUI stageUI;
-
-
-    
     private void Awake()
     {
         MapDataLoader_Stage mapDataLoader = new MapDataLoader_Stage();
 
         // 해당하는 스테이지를 불러오기
         string curStage = FindObjectOfType<StageDataController>().selectStageName;
-        Debug.Log(curStage);
         MapData mapData = mapDataLoader.Load(curStage);
 
         tilemap2D.GenerateTilemap(mapData);
@@ -27,5 +24,16 @@ public class StageController : MonoBehaviour
 
         stageUI.UpdateTextStage(curStage);
     }
-    
+    [SerializeField] GameObject pauseMenu;
+    public void GoStageSelect()
+    {
+        Time.timeScale = 1f;
+        LoadingSceneController.Instance.LoadSceneWithFade("StageSelect");
+    }
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+        LoadingSceneController.Instance.LoadSceneWithFade(SceneLoader.GetSceneName());
+    }
+
 }
