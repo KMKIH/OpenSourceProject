@@ -31,7 +31,5 @@ public class Data : MonoBehaviour
             textDataName.text = fileName.Substring(0, maxFileNameLength);
             textDataName.text += "..";
         }
-
-        textDataName.color = Color.white;
     }
 }

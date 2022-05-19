@@ -59,6 +59,7 @@ public class DirectorySpawner : MonoBehaviour
         // 생성한 Panel UI를 Content 자식으로 배치하고, 크기를 1로 설정
         clone.transform.SetParent(parentContent);   
         clone.transform.localPosition = Vector3.one;
+        clone.name = fileName;
 
         Data data = clone.GetComponent<Data>();
         data.Setup(fileName);
