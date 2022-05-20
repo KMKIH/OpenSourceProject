@@ -6,10 +6,6 @@ using TMPro;
 
 public class Data : MonoBehaviour
 {
-    [SerializeField]
-    private Sprite[] spriteIcons;
-
-    private Image imageIcon;
     private TextMeshProUGUI textDataName;
 
     private string fileName;
@@ -19,7 +15,6 @@ public class Data : MonoBehaviour
 
     public void Setup(string fileName)
     {
-        imageIcon = GetComponentInChildren<Image>();
         textDataName = GetComponentInChildren<TextMeshProUGUI>();
 
         this.fileName = fileName;

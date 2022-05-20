@@ -14,7 +14,6 @@ public class SelectButton_EditMap : MonoBehaviour
     }
     public void SetCurSelectEditMap()
     {
-        Debug.Log("a");
         inputController.curSelectMap = data.FileName;
         OnlyOneCanSelect();
     }
@@ -26,7 +25,8 @@ public class SelectButton_EditMap : MonoBehaviour
             this.GetComponent<Image>().color = selectedColor;
             foreach(SelectButton_EditMap a in FindObjectsOfType<SelectButton_EditMap>())
             {
-                a.GetComponent<Image>().color = normalColor;
+                if(!a.name.Equals(inputController.curSelectMap))
+                    a.GetComponent<Image>().color = normalColor;
             }
         }
     }

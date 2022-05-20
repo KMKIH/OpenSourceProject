@@ -23,7 +23,7 @@ public class DirectoryController : MonoBehaviour
         UpdateDirectory(m_Directory);
     }
 
-    private void UpdateDirectory(DirectoryInfo directory)
+    public void UpdateDirectory(DirectoryInfo directory)
     {
         // 현재 경로 설정
         m_Directory = directory;
@@ -34,6 +34,7 @@ public class DirectoryController : MonoBehaviour
     }
     private void Update()
     {
-        UpdateDirectory(m_Directory);
+        if(SceneLoader.GetSceneName().Equals("Editor"))
+            UpdateDirectory(m_Directory);
     }
 }
