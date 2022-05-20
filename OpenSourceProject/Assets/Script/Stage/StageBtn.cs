@@ -18,6 +18,8 @@ public class StageBtn : MonoBehaviour
     private void LoadStage()
     {
         FindObjectOfType<StageDataController>().selectStageName = stage.name;
+        StageDataController.StageIdx = stage.name[stage.name.Length - 1]-'0' - 1;
+        Debug.Log(StageDataController.StageIdx);
         LoadingSceneController.Instance.LoadSceneWithFade("Stage");
     }
 }

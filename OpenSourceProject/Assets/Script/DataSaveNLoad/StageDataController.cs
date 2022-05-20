@@ -45,16 +45,6 @@ public class StageDataController : MonoBehaviour
             Init();
             Debug.Log("데이터가 없어 초기화");
         }
-
-        // Set Stage Idx
-        for (int i = stageArr.Length - 1; i >= 0; i--)
-        {
-            if (stageArr[i].numOfStar > 0)
-            {
-                stageIdx = i + 1;
-                break;
-            }
-        }
     }
     void Save()
     {
