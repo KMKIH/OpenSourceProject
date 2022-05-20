@@ -18,7 +18,7 @@ public class StageController : MonoBehaviour
 
         tilemap2D.GenerateTilemap(mapData);
 
-        playerController.Setup(mapData.playerPosition, mapData.mapSize.y);
+        playerController.Setup(mapData.playerPosition, mapData.mapSize.x, mapData.mapSize.y);
 
         cameraController.Setup(mapData.mapSize.x, mapData.mapSize.y);
 

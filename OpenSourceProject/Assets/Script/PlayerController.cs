@@ -9,10 +9,11 @@ public class PlayerController : MonoBehaviour
     private float deathLimitY;
 
 
-    public void Setup(Vector2Int position, int mapSizeY)
+    public void Setup(Vector2Int position, int mapSizeX, int mapSizeY)
     {
         movement2D = GetComponent<Movement2D>();
-        transform.position = new Vector3(position.x, position.y, 0);
+        //(-(width * 0.5f - 0.5f) + x, (height * 0.5f - 0.5f) - y)
+        transform.position = new Vector3(-(mapSizeX * 0.5f - 0.5f) + position.x, (mapSizeY * 0.5f - 0.5f) - position.y, 0);
 
         deathLimitY = -mapSizeY / 2;
     }

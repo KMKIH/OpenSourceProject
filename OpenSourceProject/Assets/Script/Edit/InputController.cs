@@ -6,6 +6,7 @@ public class InputController : MonoBehaviour
     private Camera mainCamera;
     private TileType_Edit currentType = TileType_Edit.Empty;  // 마우스 클릭된 위치의 타일을 currentType 속성으로 변경
     private Tile_Edit playerTile = null;                 // 플레이어 타일 정보
+    private Tile_Edit blinkTile = null;                 // 플레이어 타일 정보
 
     [SerializeField]
     private CameraController_Edit cameraController;      // 카메라 위치, 줌 제어를 위한 CameraController
@@ -44,6 +45,14 @@ public class InputController : MonoBehaviour
                             playerTile.TileType_Edit = TileType_Edit.Empty;
                         }
                         playerTile = tile;
+                    }
+                    if (currentType == TileType_Edit.Blink)
+                    {
+                        if (blinkTile != null)
+                        {
+                            blinkTile.TileType_Edit = TileType_Edit.Empty;
+                        }
+                        blinkTile = tile;
                     }
                     // 부딪힌 오브젝트를 tileType 속성으로 변경 (타일, 아이템, 플레이어 캐릭터)
                     tile.TileType_Edit = currentType;

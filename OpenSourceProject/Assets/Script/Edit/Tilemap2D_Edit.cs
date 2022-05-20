@@ -92,8 +92,13 @@ public class Tilemap2D_Edit : MonoBehaviour
                 mapData.mapData[i] = (int)TileType_Edit.Empty;
 
                 // 현재 위치 정보를 mapData.playerPosition에 저장
-                int x = (int)TileList[i].transform.position.x;
-                int y = (int)TileList[i].transform.position.y;
+                //int index = y * width + x;
+                Debug.Log(i);
+                Debug.Log(mapData.mapSize.x);
+                int x = i % mapData.mapSize.x;
+                int y = i / mapData.mapSize.x;
+                //int x = (float)TileList[i].transform.position.x;
+                //int y = (float)TileList[i].transform.position.y;
                 mapData.playerPosition = new Vector2Int(x, y);
             }
         }
@@ -139,9 +144,17 @@ public class Tilemap2D_Edit : MonoBehaviour
                 // 생성되는 타일맵의 중앙이 (0, 0, 0)인 위치
                 Vector3 position = new Vector3(-(width * 0.5f - 0.5f) + x, (height * 0.5f - 0.5f) - y);
 
-                // 타일 생성
-                SpawnTile((TileType_Edit)mapData.mapData[index], position);
-
+                if (x == mapdata.playerPosition.x && y == mapdata.playerPosition.y)
+                {
+                    SpawnTile(TileType_Edit.Player, position);
+                    Debug.Log("1");
+                }
+                else
+                {
+                    // 타일 생성
+                    SpawnTile((TileType_Edit)mapData.mapData[index], position);
+                    Debug.Log("2");
+                }
             }
         }
     }
