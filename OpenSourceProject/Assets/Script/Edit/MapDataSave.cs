@@ -14,8 +14,15 @@ public class MapDataSave : MonoBehaviour
 
     void Awake()
     {
-        inputFileName.text = "Name.json";
         directoryController = FindObjectOfType<DirectoryController>();
+    }
+    public void SetInputFileName()
+    {
+        if (EditSceneController.curSelectMap == null)
+        {
+            inputFileName.text = "NoName.json";
+        }
+        inputFileName.text = EditSceneController.curSelectMap;
     }
 
     public void Save()

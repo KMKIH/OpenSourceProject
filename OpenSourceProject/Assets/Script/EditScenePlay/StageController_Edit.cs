@@ -20,7 +20,7 @@ public class StageController_Edit : MonoBehaviour
         playerController.Setup(mapData.playerPosition, mapData.mapSize.x, mapData.mapSize.y);
 
         cameraController.Setup(mapData.mapSize.x, mapData.mapSize.y);
-
+        
         stageUI.UpdateTextStage(curStage);
     }
 

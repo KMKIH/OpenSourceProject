@@ -10,6 +10,10 @@ public class StageUI : MonoBehaviour
 
     public void UpdateTextStage(string stageName)
     {
+        if (stageName.Contains(".json"))
+        {
+            stageName = stageName.Substring(0, stageName.Length - 5);
+        }
         textStage.text = stageName;
     }
 

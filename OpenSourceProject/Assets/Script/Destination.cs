@@ -15,11 +15,15 @@ public class Destination : Tile
     }
     public override void Collision(CollisionDirection direction)//접촉하면 
     {
-        if (stageIdx < maxStageCount - 1)//다음 스테이지가 남았을 때 
+        if (SceneLoader.GetSceneName().Equals("Stage_Edit"))
+        {
+            ClearWindow_EditController.Instance.Clear(tilemap2D.maxCoinCount - tilemap2D.currentCoinCount, tilemap2D.maxCoinCount);
+        }
+        else if (stageIdx < maxStageCount - 1)//다음 스테이지가 남았을 때 
         {
             ClearWindowController.Instance.Clear(tilemap2D.maxCoinCount - tilemap2D.currentCoinCount,tilemap2D.maxCoinCount);
         }
-        else
+        else if(stageIdx == maxStageCount - 1)
         {
             ClearWindow_lastController.Instance.Clear(tilemap2D.maxCoinCount - tilemap2D.currentCoinCount, tilemap2D.maxCoinCount);
         }

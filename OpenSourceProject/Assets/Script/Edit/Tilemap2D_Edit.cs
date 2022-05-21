@@ -11,8 +11,6 @@ public class Tilemap2D_Edit : MonoBehaviour
     private TMP_InputField inputWidth;      // 맵의 width 크기를 얻어오는 inputfield
     [SerializeField]
     private TMP_InputField inputHeight;     // 맵의 height 크기를 얻어오는 inputfield
-    [SerializeField]
-    private TMP_InputField inputName;     // 맵의 이름을 얻어오는 inputName
 
     private MapData mapData;                // 맵 데이터 저장에 사용되는 데이터 양식 클래스
 
@@ -92,8 +90,6 @@ public class Tilemap2D_Edit : MonoBehaviour
 
                 // 현재 위치 정보를 mapData.playerPosition에 저장
                 //int index = y * width + x;
-                Debug.Log(i);
-                Debug.Log(mapData.mapSize.x);
                 int x = i % mapData.mapSize.x;
                 int y = i / mapData.mapSize.x;
                 //int x = (float)TileList[i].transform.position.x;
@@ -106,22 +102,25 @@ public class Tilemap2D_Edit : MonoBehaviour
 
     public void findMapdata()
     {
-        // inputFirld UI에 입력된 텍스트 정보를 불러와서 fileName에 저장
-        string fileName = EditSceneController.curSelectMap;
-        // fileName에 ".json" 문장이 없으면 입력해준다
-        // ex) "Stage01" => "Stage01.json"
-        if (fileName.Contains(".json") == false)
+        if (EditSceneController.curSelectMap != null)
         {
-            fileName += ".json";
+            // inputFirld UI에 입력된 텍스트 정보를 불러와서 fileName에 저장
+            string fileName = EditSceneController.curSelectMap;
+            // fileName에 ".json" 문장이 없으면 입력해준다
+            // ex) "Stage01" => "Stage01.json"
+            if (fileName.Contains(".json") == false)
+            {
+                fileName += ".json";
+            }
+
+            // MapDataLoader 클래스 인스턴스 생성 및 메모리 할당
+            MapDataLoader_Edit mapDataLoader = new MapDataLoader_Edit();
+
+            //MapData mapData = mapDataLoader.Load(fileName);
+            mapData = mapDataLoader.Load(fileName);
+
+            LoadTilemap(mapData);
         }
-
-        // MapDataLoader 클래스 인스턴스 생성 및 메모리 할당
-        MapDataLoader_Edit mapDataLoader = new MapDataLoader_Edit();
-
-        //MapData mapData = mapDataLoader.Load(fileName);
-        mapData = mapDataLoader.Load(fileName);
-
-        LoadTilemap(mapData);
     }
 
     public void LoadTilemap(MapData mapdata)
