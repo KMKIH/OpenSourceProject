@@ -8,13 +8,14 @@ public class MapDataSave : MonoBehaviour
     [SerializeField]
     private TMP_InputField inputFileName;
     [SerializeField]
-    private TMP_InputField inputFileName2;
-    [SerializeField]
     private Tilemap2D_Edit tilemap2D;
+
+    DirectoryController directoryController;
 
     void Awake()
     {
         inputFileName.text = "Name.json";
+        directoryController = FindObjectOfType<DirectoryController>();
     }
 
     public void Save()
@@ -44,7 +45,7 @@ public class MapDataSave : MonoBehaviour
     public void Delete()
     {
         // inputFirld UI에 입력된 텍스트 정보를 불러와서 fileName에 저장
-        string fileName = inputFileName2.text;
+        string fileName = EditSceneController.curSelectMap;
         // fileName에 ".json" 문장이 없으면 입력해준다
         // ex) "Stage01" => "Stage01.json"
         if (fileName.Contains(".json") == false)
@@ -58,5 +59,7 @@ public class MapDataSave : MonoBehaviour
         // "fileName" 파일에 "toJson" 내용을 저장
         //File.WriteAllText(fileName, toJson);
         File.Delete(fileName);
+
+        directoryController.UpdateDirectory(directoryController.GetDirectory());
     }
 }

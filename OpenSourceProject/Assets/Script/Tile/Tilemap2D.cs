@@ -5,8 +5,6 @@ public class Tilemap2D : MonoBehaviour
 
     [Header("Common")]
     [SerializeField]
-    private StageController stageController;
-    [SerializeField]
     private StageUI stageUI;
 
     [Header("Tile")]

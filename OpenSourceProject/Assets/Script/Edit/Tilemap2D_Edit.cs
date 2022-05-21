@@ -28,7 +28,6 @@ public class Tilemap2D_Edit : MonoBehaviour
         // InputField에 표시되는 기본값 설정
         inputWidth.text = Width.ToString();
         inputHeight.text = Height.ToString();
-        inputName.text = "NoName.json";
 
         mapData = new MapData();
         TileList = new List<Tile_Edit>();
@@ -102,14 +101,13 @@ public class Tilemap2D_Edit : MonoBehaviour
                 mapData.playerPosition = new Vector2Int(x, y);
             }
         }
-
         return mapData;
     }
 
     public void findMapdata()
     {
         // inputFirld UI에 입력된 텍스트 정보를 불러와서 fileName에 저장
-        string fileName = inputName.text;
+        string fileName = EditSceneController.curSelectMap;
         // fileName에 ".json" 문장이 없으면 입력해준다
         // ex) "Stage01" => "Stage01.json"
         if (fileName.Contains(".json") == false)
@@ -147,13 +145,11 @@ public class Tilemap2D_Edit : MonoBehaviour
                 if (x == mapdata.playerPosition.x && y == mapdata.playerPosition.y)
                 {
                     SpawnTile(TileType_Edit.Player, position);
-                    Debug.Log("1");
                 }
                 else
                 {
                     // 타일 생성
                     SpawnTile((TileType_Edit)mapData.mapData[index], position);
-                    Debug.Log("2");
                 }
             }
         }

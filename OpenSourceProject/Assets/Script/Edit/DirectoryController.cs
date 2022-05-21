@@ -27,14 +27,13 @@ public class DirectoryController : MonoBehaviour
     {
         // 현재 경로 설정
         m_Directory = directory;
-      
+
         // 현재 폴더에 존재하는 모든 폴더의 이름 출력
         directorySpawner.UpdateDirectory(directory);
 
     }
-    private void Update()
+    public DirectoryInfo GetDirectory()
     {
-        if(SceneLoader.GetSceneName().Equals("Editor"))
-            UpdateDirectory(m_Directory);
+        return m_Directory;
     }
 }

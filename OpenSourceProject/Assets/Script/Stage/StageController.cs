@@ -1,5 +1,4 @@
 using UnityEngine;
-using QuantumTek;
 
 public class StageController : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class StageController : MonoBehaviour
 
         stageUI.UpdateTextStage(curStage);
     }
-    [SerializeField] GameObject pauseMenu;
+
     public void GoStageSelect()
     {
         Time.timeScale = 1f;

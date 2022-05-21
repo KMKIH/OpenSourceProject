@@ -4,5 +4,4 @@ using UnityEngine;
 
 public class InputController_SelectEditMap : MonoBehaviour
 {
-    public string curSelectMap = null;
 }
