@@ -29,12 +29,13 @@ public class StartProgram : MonoBehaviour
         [DynamoDBHashKey] // Hash key.
         public string id { get; set; }
         [DynamoDBProperty]
-         public string data { get; set; }
+        public string data { get; set; }
     }
-    public void UploadAllMapData() {
+    public void UploadAllMapData()
+    {
         // 파일 이름 받아오기
         List<Data> list = FindObjectOfType<DirectorySpawner>().fileList;
-        foreach(Data data in list)
+        foreach (Data data in list)
         {
             UploadMapData(data.FileName);
         }
@@ -79,10 +80,11 @@ public class StartProgram : MonoBehaviour
                     new ScanCondition("ProductCategory", ScanOperator.Equal, "Book")
         */
       );
-        foreach (AWSDATA a in /*데이터 들*/) {
+        foreach (AWSDATA a in /*데이터 들*/)
+        {
             context.LoadAsync<AWSDATA>(a.id, (AmazonDynamoDBResult<AWSDATA> result) =>
             {
-            // id가 abcd인 캐릭터 정보를 DB에서 받아옴
+                // id가 abcd인 캐릭터 정보를 DB에서 받아옴
                 if (result.Exception != null)
                 {
                     Debug.LogException(result.Exception);

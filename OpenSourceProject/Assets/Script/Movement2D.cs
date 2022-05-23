@@ -37,6 +37,10 @@ public class Movement2D : MonoBehaviour
     
     public MoveType MoveType { private set; get; }
 
+    public AudioClip clip;
+
+
+
     private void Awake()
     {
         collider2D = GetComponent<Collider2D>();
@@ -59,6 +63,9 @@ public class Movement2D : MonoBehaviour
         {
             MoveType = MoveType.UpDown;
         }
+
+      
+
     }
     public void SetMoveType(MoveType moveType)
     {
@@ -112,6 +119,7 @@ public class Movement2D : MonoBehaviour
         {
             velocity.y = this.jumpForce;
         }
+        SoundManager.instance.SFXPlay("Jump", clip);
     }
 
     public void SetupStraightMove(MoveType moveType, Vector3 position)
@@ -122,8 +130,6 @@ public class Movement2D : MonoBehaviour
 
         velocity.y = 0;
     }
-
-
 
     private void RaycastsHorizontal(ref Vector3 velocity)
     {
