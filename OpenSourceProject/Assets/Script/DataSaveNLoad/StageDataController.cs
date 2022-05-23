@@ -18,7 +18,7 @@ public class StageDataController : MonoBehaviour
         get => stageIdx;
     }
     // Stage Data
-    StageData stageData = new StageData();
+    public static StageData stageData = new StageData();
 
     private void Awake()
     {

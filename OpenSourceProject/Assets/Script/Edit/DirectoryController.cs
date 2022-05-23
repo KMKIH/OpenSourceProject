@@ -30,7 +30,6 @@ public class DirectoryController : MonoBehaviour
 
         // 현재 폴더에 존재하는 모든 폴더의 이름 출력
         directorySpawner.UpdateDirectory(directory);
-
     }
     public DirectoryInfo GetDirectory()
     {

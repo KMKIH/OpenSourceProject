@@ -18,7 +18,7 @@ public class DirectorySpawner : MonoBehaviour
     [SerializeField]
     private Transform parentContent;                //생성되는 TextUI가 저장되는 부모 오브젝트
 
-    private List<Data> fileList;                    // 파일 리스트
+    public List<Data> fileList;                    // 파일 리스트
 
     public void Setup()
     {

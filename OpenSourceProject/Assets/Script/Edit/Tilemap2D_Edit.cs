@@ -128,6 +128,8 @@ public class Tilemap2D_Edit : MonoBehaviour
         // mapData 정보를 바탕으로 타일 형태의 맵 생성
         int width = mapData.mapSize.x;
         int height = mapData.mapSize.y;
+        Width = width;
+        Height = height;
 
         for(int y = 0; y < height; y++)
         {
