@@ -28,11 +28,13 @@ public class DirectorySpawner : MonoBehaviour
     public void UpdateDirectory(DirectoryInfo directory)
     {
        // 기존에 생성되어 있는 데이터 정보 삭제
+       
        for(int i = 0; i < fileList.Count; i++)
         {
             Destroy(fileList[i].gameObject);
         }
        fileList.Clear();
+       
 
         // 파일 UI 생성
         foreach (FileInfo file in directory.GetFiles())

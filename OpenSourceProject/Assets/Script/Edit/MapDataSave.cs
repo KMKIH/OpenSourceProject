@@ -30,12 +30,13 @@ public class MapDataSave : MonoBehaviour
         // tilemap2D에 저장되어 있는 MapData 정보를 불러온다
         // 맵 크기, 플레이어 캐릭터 위치, 맵에 존재하는 타일들의 정보
         MapData mapData = tilemap2D.GetMapData();
+        mapData.fileName = inputFileName.text;
 
         // inputFirld UI에 입력된 텍스트 정보를 불러와서 fileName에 저장
         string fileName = inputFileName.text;
         // fileName에 ".json" 문장이 없으면 입력해준다
         // ex) "Stage01" => "Stage01.json"
-        if(fileName.Contains(".json") == false)
+        if (fileName.Contains(".json") == false)
         {
             fileName += ".json";
         }

@@ -23,6 +23,10 @@ public class DirectoryController : MonoBehaviour
         UpdateDirectory(m_Directory);
     }
 
+    public void UpdateDirectoryAuto()
+    {
+        UpdateDirectory(m_Directory);
+    }
     public void UpdateDirectory(DirectoryInfo directory)
     {
         // 현재 경로 설정
