@@ -15,7 +15,7 @@ public class MapDataLoader_Edit
 
         // 파일의 경로, 파일명을 하나로 합칠 때 사용
         // Application.streamingAssetsPath : 현재 유니티 프로젝트 - Assets - MapData 폴더 경로
-        fileName = Path.Combine("Assets/Mapdata/", fileName);
+        fileName = Path.Combine(Application.persistentDataPath, fileName);
 
         // "fileName" 파일에 있는 내용을 "dataAsJson" 변수에 문자열 형태로 저장
         string dataAsJson = File.ReadAllText(fileName);

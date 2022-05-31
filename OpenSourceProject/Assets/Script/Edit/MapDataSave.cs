@@ -25,6 +25,7 @@ public class MapDataSave : MonoBehaviour
         inputFileName.text = EditSceneController.curSelectMap;
     }
 
+    [SerializeField]GameObject Image_saveComplete;
     public void Save()
     {
         // tilemap2D에 저장되어 있는 MapData 정보를 불러온다
@@ -42,13 +43,15 @@ public class MapDataSave : MonoBehaviour
         }
         // 파일의 경로, 파일명을 하나로 합칠 때 사용
         // 현재 프로젝트 위치 기준으로 "MapData" 폴더
-        fileName = Path.Combine("Assets/Mapdata/", fileName);
+        fileName = Path.Combine(Application.persistentDataPath, fileName);
 
         // mapData 인스턴스에 있는 내용을 직렬화해서 toJson 변수에 문자열 형태로 저장
         string toJson = JsonConvert.SerializeObject(mapData, Formatting.Indented);
         // "fileName" 파일에 "toJson" 내용을 저장
         //File.Delete(fileName);
         File.WriteAllText(fileName, toJson);
+
+        Image_saveComplete.SetActive(true);
     }
     public void Delete()
     {
@@ -62,7 +65,7 @@ public class MapDataSave : MonoBehaviour
         }
         // 파일의 경로, 파일명을 하나로 합칠 때 사용
         // 현재 프로젝트 위치 기준으로 "MapData" 폴더
-        fileName = Path.Combine("Assets/Mapdata/", fileName);
+        fileName = Path.Combine(Application.persistentDataPath, fileName);
 
         // "fileName" 파일에 "toJson" 내용을 저장
         //File.WriteAllText(fileName, toJson);

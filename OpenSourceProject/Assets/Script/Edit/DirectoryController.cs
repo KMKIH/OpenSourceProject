@@ -16,7 +16,7 @@ public class DirectoryController : MonoBehaviour
         directorySpawner.Setup();
 
         //최초 경로를 프로젝트의 MapData로 설정
-        string MapDataFolder = "Assets/Mapdata/";
+        string MapDataFolder = Application.persistentDataPath;
         m_Directory = new DirectoryInfo(MapDataFolder);
 
         // 폴더에 존재하는 디렉토리 생성

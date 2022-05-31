@@ -20,7 +20,7 @@ public class StartProgram : MonoBehaviour
     [SerializeField] GameObject endImage;
     [SerializeField] GameObject canNotTouch;
 
-    static int maxMapFileNum = 30;
+    static int maxMapFileNum = 10;
     private void Awake()
     {
         UnityInitializer.AttachToGameObject(this.gameObject);
@@ -55,6 +55,7 @@ public class StartProgram : MonoBehaviour
         foreach (Data data in list)
         {
             UploadMapData(data.FileName, fileName_);
+            Debug.Log(data.FileName);
         }
         StartCoroutine(WaitCompleteUpload());
     }
@@ -74,7 +75,7 @@ public class StartProgram : MonoBehaviour
         ///////////////////////////////////////////////////////////////////
         // 파일의 경로, 파일명을 하나로 합칠 때 사용
         // Application.streamingAssetsPath : 현재 유니티 프로젝트 - Assets - MapData 폴더 경로
-        fileName = Path.Combine("Assets/Mapdata/", fileName);
+        fileName = Path.Combine(Application.persistentDataPath, fileName);
         // "fileName" 파일에 있는 내용을 "dataAsJson" 변수에 문자열 형태로 저장
         string dataAsJson = File.ReadAllText(fileName);
         ////////////////////////////////////////////////////////////////////
@@ -142,7 +143,7 @@ public class StartProgram : MonoBehaviour
                     }
                     // 파일의 경로, 파일명을 하나로 합칠 때 사용
                     // 현재 프로젝트 위치 기준으로 "MapData" 폴더
-                    fileName = Path.Combine("Assets/Mapdata/", fileName);
+                    fileName = Path.Combine(Application.persistentDataPath, fileName);
 
                     // "fileName" 파일에 "toJson" 내용을 저장
                     //File.Delete(fileName);

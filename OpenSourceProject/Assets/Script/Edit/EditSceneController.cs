@@ -35,6 +35,7 @@ public class EditSceneController : MonoBehaviour
     }
     public void Create()
     {
+        curSelectMap = null;
         cameraController.SetupCamera();
         mapDataSave.SetInputFileName();
         editWindow.SetActive(false);

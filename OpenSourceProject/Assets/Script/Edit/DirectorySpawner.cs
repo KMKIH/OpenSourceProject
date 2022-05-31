@@ -41,7 +41,10 @@ public class DirectorySpawner : MonoBehaviour
         {
             if (file.Name.Contains(".meta") == false)
             {
-                SpawnData(file.Name);
+                if (file.Name.Contains(".json"))
+                {
+                    SpawnData(file.Name);
+                }
             }
         }
 

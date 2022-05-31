@@ -9,11 +9,11 @@ public class StageController_Edit : MonoBehaviour
     [SerializeField] private StageUI stageUI;
     private void Awake()
     {
-        MapDataLoader_Stage mapDataLoader = new MapDataLoader_Stage();
+        MapDataLoader_Edit mapDataLoader = new MapDataLoader_Edit();
 
         // 해당하는 스테이지를 불러오기
         string curStage = EditSceneController.curSelectMap;
-        MapData mapData = mapDataLoader.Load_Edit(curStage);
+        MapData mapData = mapDataLoader.Load(curStage);
 
         tilemap2D.GenerateTilemap(mapData);
 
