@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - ClearWindow_EditController
     - ClearWindow_lastController
     - Data
+    - DatabaseManagement
     - Destination
     - DirectoryController
     - DirectorySpawner
@@ -43,7 +44,6 @@ ScriptsOnlyBuild:
     - StageSelectSceneController
     - StageSelectUIController
     - StageUI
-    - StartProgram
     - TileBase
     - TileBoom
     - TileBroke
@@ -57,6 +57,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -692,10 +693,10 @@ ScriptsOnlyBuild:
     className: Tilemap2D
   - hash:
       serializedVersion: 2
-      Hash: d38265dc24345830109f46fa74909735
+      Hash: 57c6e9f57783c11464767828647c78c8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: StartProgram
+    className: DatabaseManagement
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -1561,4 +1562,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Stage.unity
   - Assets/Scenes/Editor.unity
   - Assets/Scenes/Stage_Edit.unity
-  playerPath: C:/Users/khkim/Desktop/GitHub/OpenSourceProject/Play File/OpenSourceProject.exe
+  playerPath: C:/Users/khkim/Desktop/GitHub/OpenSourceProject/Play FIle/OpenSourceProject.exe
