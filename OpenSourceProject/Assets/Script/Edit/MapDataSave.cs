@@ -9,13 +9,6 @@ public class MapDataSave : MonoBehaviour
     private TMP_InputField inputFileName;
     [SerializeField]
     private Tilemap2D_Edit tilemap2D;
-
-    DirectoryController directoryController;
-
-    void Awake()
-    {
-        directoryController = FindObjectOfType<DirectoryController>();
-    }
     public void SetInputFileName()
     {
         if (EditSceneController.curSelectMap == null)
@@ -70,7 +63,5 @@ public class MapDataSave : MonoBehaviour
         // "fileName" 파일에 "toJson" 내용을 저장
         //File.WriteAllText(fileName, toJson);
         File.Delete(fileName);
-
-        directoryController.UpdateDirectory(directoryController.GetDirectory());
     }
 }

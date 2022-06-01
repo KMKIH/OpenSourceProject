@@ -20,7 +20,7 @@ public class DirectoryController : MonoBehaviour
         m_Directory = new DirectoryInfo(MapDataFolder);
 
         // 폴더에 존재하는 디렉토리 생성
-        UpdateDirectory(m_Directory);
+        UpdateDirectoryAuto();
     }
 
     public void UpdateDirectoryAuto()

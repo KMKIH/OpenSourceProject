@@ -48,7 +48,7 @@ public class DatabaseManagement : MonoBehaviour
     public void UploadAllMapData()
     {
         // 파일 이름 받아오기
-        List<Data> list = FindObjectOfType<DirectorySpawner>().fileList;
+        List<Data> list = GetComponent<DirectorySpawner>().fileList;
         string fileName_ = "fileName";
         idx = 0;
         countList = 0;
@@ -88,10 +88,7 @@ public class DatabaseManagement : MonoBehaviour
             if (result.Exception == null)
             {
                 countList++;
-            }
-            else
-            {
-                countList++;
+                Debug.Log("success");
             }
         });
     }
@@ -120,6 +117,9 @@ public class DatabaseManagement : MonoBehaviour
             }
         }
     }
+    
+    
+    
     int countDownload = 0;
     public void DownloadMapData() //DB에서 캐릭터 정보 받기
     {
@@ -127,7 +127,6 @@ public class DatabaseManagement : MonoBehaviour
         // 해당 id를 통해 모든 파일을 덮어쓰기 or 생성한다.
         string fileName_ = "fileName";
         AWSDATA temp = null;
-
 
         countDownload = 0;
         downloadingImage.SetActive(true);
@@ -138,18 +137,15 @@ public class DatabaseManagement : MonoBehaviour
         {
             context.LoadAsync<AWSDATA>(fileName_ + i, (AmazonDynamoDBResult<AWSDATA> result) =>
             {
-                // id가 abcd인 캐릭터 정보를 DB에서 받아옴
+                // id가 "fileName_ + i"인 데이터를 DB에서 받아옴
                 if (result.Exception != null)
                 {
                     Debug.LogException(result.Exception);
                     return;
                 }
+
                 temp = result.Result;
-                if (temp == null)
-                {
-                    countDownload++;
-                }
-                else
+                if (temp != null)
                 {
                     // 동기화
                     string fileName = JsonConvert.DeserializeObject<MapData>(temp.data).fileName;
@@ -164,9 +160,8 @@ public class DatabaseManagement : MonoBehaviour
                     // "fileName" 파일에 "toJson" 내용을 저장
                     //File.Delete(fileName);
                     File.WriteAllText(fileName, temp.data);
-                    FindObjectOfType<DirectoryController>().UpdateDirectoryAuto();
-                    countDownload++;
                 }
+                countDownload++;
             }, null);
         }
         StartCoroutine(WaitCompleteDownload());
@@ -182,6 +177,7 @@ public class DatabaseManagement : MonoBehaviour
                 failImage.SetActive(true);
                 downloadingImage.SetActive(false);
                 canNotTouch.SetActive(false);
+                GetComponent<DirectoryController>().UpdateDirectoryAuto();
                 yield break;
             }
             yield return null;
@@ -190,6 +186,7 @@ public class DatabaseManagement : MonoBehaviour
                 succesImage.SetActive(true);
                 downloadingImage.SetActive(false);
                 canNotTouch.SetActive(false);
+                GetComponent<DirectoryController>().UpdateDirectoryAuto();
                 yield break;
             }
         }

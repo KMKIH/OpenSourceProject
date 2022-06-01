@@ -28,11 +28,11 @@ public class DirectorySpawner : MonoBehaviour
     public void UpdateDirectory(DirectoryInfo directory)
     {
        // 기존에 생성되어 있는 데이터 정보 삭제
-       
-       for(int i = 0; i < fileList.Count; i++)
-        {
-            Destroy(fileList[i].gameObject);
-        }
+       foreach(Data data in fileList)
+       {
+            if(data != null)
+                Destroy(data.gameObject);
+       }
        fileList.Clear();
        
 
@@ -71,5 +71,4 @@ public class DirectorySpawner : MonoBehaviour
 
         fileList.Add(data);
     }
-
 }
